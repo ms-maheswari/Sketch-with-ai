@@ -258,7 +258,8 @@ Requirements:
                   
                     language="html" />
                   ) : (
-                    <iframe key={refreshKey} srcDoc={code} className={`w-full h-full  ${theme} === 'dark' ? 'bg-gray-800 text-white' : 'bg-gray-900' `}></iframe>
+                    <iframe key={refreshKey} 
+                    title="code-preview" srcDoc={code} className={`w-full h-full  ${theme} === 'dark' ? 'bg-gray-800 text-white' : 'bg-gray-900' `}></iframe>
                   )}
                 </div>
               </>
@@ -276,7 +277,7 @@ Requirements:
               <IoCloseSharp />
             </button>
           </div>
-          <iframe srcDoc={code} className="w-full h-[calc(100vh-60px)]"></iframe>
+          <iframe  title="live-preview" srcDoc={code} className="w-full h-[calc(100vh-60px)]"></iframe>
         </div>
       )}
     </>
